@@ -41,13 +41,13 @@ Program bekerja dengan menggunakan algoritma brute force dengan proses backtrack
 │   │   ├─ input8.txt
 │   │   └─ input9.txt
 │   └── output
-│   │   ├─ output1.txt
-│   │   ├─ output2.txt
-│   │   ├─ output3.txt
-│   │   ├─ output4.txt
-│   │   ├─ output5.txt
-│   │   ├─ output6.txt
-│   │   └─ output7.txt
+│       ├─ output1.txt
+│       ├─ output2.txt
+│       ├─ output3.txt
+│       ├─ output4.txt
+│       ├─ output5.txt
+│       ├─ output6.txt
+│       └─ output7.txt
 └── README.md
 ```
 
