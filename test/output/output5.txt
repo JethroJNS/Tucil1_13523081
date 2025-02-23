@@ -1,0 +1,7 @@
+A C C 
+A A C 
+A C C 
+
+Waktu pencarian: 136882 ms
+
+Banyak kasus yang ditinjau: 2

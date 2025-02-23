@@ -1,0 +1,9 @@
+D D D D D E 
+C A A A D E 
+C A B A D E 
+C A A A D E 
+C C C C C E 
+
+Waktu pencarian: 332648 ms
+
+Banyak kasus yang ditinjau: 2974

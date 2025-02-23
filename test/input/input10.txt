@@ -1,0 +1,10 @@
+3 6 5
+AAA
+A
+BB
+ BB
+CC
+DDD
+DD
+ D
+EE
