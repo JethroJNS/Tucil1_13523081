@@ -73,17 +73,17 @@ public class IQPuzzlerPro {
         try {
             br = new BufferedReader(new FileReader(inputPath));
         } catch (FileNotFoundException e) {
-            throw new IOException("File tidak ditemukan");
+            throw new IOException("File tidak ditemukan!");
         }
 
         // Membaca baris pertama untuk mendapatkan ukuran papan dan jumlah piece
         String firstLine = br.readLine();
         if (firstLine == null) {
-            throw new IOException("Format file input tidak valid");
+            throw new IOException("Format file input tidak valid!");
         }
         String[] dims = firstLine.split(" ");
         if (dims.length < 3) {
-            throw new IOException("Format file input tidak valid");
+            throw new IOException("Format file input tidak valid!");
         }
         N = Integer.parseInt(dims[0]);
         M = Integer.parseInt(dims[1]);
@@ -92,7 +92,7 @@ public class IQPuzzlerPro {
         // Membaca baris "DEFAULT"
         String defaultLine = br.readLine();
         if (defaultLine == null || !defaultLine.equals("DEFAULT")) {
-            throw new IOException("Format file input tidak valid");
+            throw new IOException("Format file input tidak valid!");
         }
 
         // Inisialisasi papan
@@ -131,9 +131,9 @@ public class IQPuzzlerPro {
 
         // Memvalidasi jumlah piece
         if (pieces.size() > P) {
-            throw new IOException("Piece berlebih");
+            throw new IOException("Piece berlebih!");
         } else if (pieces.size() < P) {
-            throw new IOException("Piece kurang");
+            throw new IOException("Piece kurang!");
         }
 
         // Memvalidasi total ukuran piece
@@ -146,7 +146,7 @@ public class IQPuzzlerPro {
             }
         }
         if (totalSize != N * M) {
-            throw new IOException("Ukuran piece tidak sesuai");
+            throw new IOException("Ukuran piece tidak sesuai!");
         }
     }
 
@@ -214,7 +214,7 @@ public class IQPuzzlerPro {
         // Iterasi melalui semua sel dalam bentuk piece
         for (int r = 0; r < shape.length; r++) {
             for (int c = 0; c < shape[r].length; c++) {
-                if (shape[r][c]) {// Jika sel dalam shape bernilai true, piece ditempatkan pada posisi yang sesuai
+                if (shape[r][c]) { // Jika sel dalam shape bernilai true, piece ditempatkan pada posisi yang sesuai
                     board[row + r][col + c] = label;
                 }
             }
