@@ -48,8 +48,9 @@ public class IQPuzzlerPro {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Masukkan nama file output: ");
         String fileName = scanner.nextLine();
+        String outputPath = "test/output/" + fileName;
         
-        try (FileWriter writer = new FileWriter(fileName)) {
+        try (FileWriter writer = new FileWriter(outputPath)) {
             // Menyimpan papan tanpa warna
             writer.write(printBoardWithoutColors());
             
@@ -66,10 +67,11 @@ public class IQPuzzlerPro {
     static void readInput(Scanner sc) throws IOException {
         System.out.print("Masukkan nama file test case: ");
         String fileName = sc.nextLine(); // Meminta input nama file
+        String inputPath = "test/input/" + fileName;
 
         BufferedReader br;
         try {
-            br = new BufferedReader(new FileReader(fileName));
+            br = new BufferedReader(new FileReader(inputPath));
         } catch (FileNotFoundException e) {
             throw new IOException("File tidak ditemukan");
         }
