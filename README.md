@@ -15,12 +15,12 @@ Program ini adalah solver untuk permainan IQ Puzzler Pro, di mana pengguna dapat
 
 Program bekerja dengan menggunakan algoritma brute force dengan proses backtracking untuk mengevaluasi semua kemungkinan penempatan piece hingga ditemukan solusi yang valid.
 
-### Kebutuhan Sistem
+## Kebutuhan Sistem
 
 * Java 8 atau versi yang lebih baru
 * Sistem operasi Windows, macOS, atau Linux
 
-### Struktur
+## Struktur
 ```ssh
 ├── bin
 │   └── IQPuzzlerPro.class
